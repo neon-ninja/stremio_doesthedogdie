@@ -19,6 +19,7 @@ const manifest = {
 const builder = new addonBuilder(manifest);
 
 builder.defineStreamHandler(async ({ type, id }) => {
+  id = id.split(":")[0]
   const url = `${BASE_URL}/dddsearch?imdb=${id}`;
   let res = await fetch(url, {
     headers: {
@@ -27,6 +28,9 @@ builder.defineStreamHandler(async ({ type, id }) => {
     }
   });
   let data = await res.json();
+  if (!data.items.length) {
+    throw new Error(`DDD doesn't know ${id}`);
+  }
   const dddId = data.items[0].id
   res = await fetch(`${BASE_URL}/media/${dddId}`, {
     headers: {
