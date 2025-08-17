@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "node-fetch": "^3.3.2",
+    "stremio-addon-sdk": "^1.6.10"
+  },
+  "name": "stremio_doesthedogdie",
+  "version": "1.0.0",
+  "description": "Adds jump scare information from DoesTheDogDie.com, with link to full page",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neon-ninja/stremio_doesthedogdie.git"
+  },
+  "keywords": [
+    "stremio"
+  ],
+  "author": "neon-ninja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neon-ninja/stremio_doesthedogdie/issues"
+  },
+  "homepage": "https://github.com/neon-ninja/stremio_doesthedogdie#readme"
+}
