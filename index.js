@@ -7,9 +7,9 @@ const BASE_URL = "https://www.doesthedogdie.com";
 
 const manifest = {
   id: "org.stremio.doesTheDogDie",
-  version: "1.0.0",
+  version: "1.0.1",
   name: "DoesTheDogDie (Jump Scares)",
-  description: "Adds jump scare information from DoesTheDogDie.com, with link to full page",
+  description: "Adds jump scare information from DoesTheDogDie.com, with link to full page. Open source at <a href='https://github.com/neon-ninja/stremio_doesthedogdie'>https://github.com/neon-ninja/stremio_doesthedogdie</a>",
   resources: ["stream"],
   types: ["movie", "series"],
   idPrefixes: ["tt"], // IMDb IDs
